@@ -9,6 +9,9 @@
 		<ServiceWorkerAssetsManifest>service-worker-assets.js</ServiceWorkerAssetsManifest>
 	</PropertyGroup>
 
+	<PropertyGroup Condition=" '$(RunConfiguration)' == 'https' ">
+	  <ExternalConsole>true</ExternalConsole>
+	</PropertyGroup>
 	<ItemGroup>
 		<PackageReference Include="Mapster" />
 		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" />
